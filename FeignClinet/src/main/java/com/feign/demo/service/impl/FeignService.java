@@ -25,7 +25,7 @@ public interface FeignService {
 
 
     @LoadBalanced
-    @RequestMapping(value="/hi" ,method = RequestMethod.POST)
+    @RequestMapping(value="/hi" ,method = RequestMethod.GET)
     String sayHello(@RequestParam("name") String name );
 
 

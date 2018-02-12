@@ -19,7 +19,7 @@ public class DemoApplication {
 	@Value("${server.port}")
 	private String port;
 
-	@RequestMapping( value="/hi" ,method = RequestMethod.POST)
+	@RequestMapping( value="/hi" ,method = RequestMethod.GET)
 	public String home (@RequestParam String name){
 		return "hi" + name + " i am from   port "+ port;
 
